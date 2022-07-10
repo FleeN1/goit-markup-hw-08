@@ -1,0 +1,36 @@
+
+/* цвет основной #212121 */
+/* цвет вторичный  #757575 */
+/* цвет лого  #000000 */
+/* цвет accent  #2196F3*/
+/* белый  #FFFFFF */
+/* adress rgba(255, 255, 255, 0.6); */
+
+body{
+    background-color: #E5E5E5;
+    color:#212121;
+
+}
+
+/* Logo */
+
+.list {
+    list-style: none;
+}
+.logo {
+    color: #000000;
+}
+.logo-web {
+    color: #2196F3;
+}
+
+/* Site nav */
+
+.site-nav .link {
+    color: #212121;
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+    color: #2196F3;
+}
+
