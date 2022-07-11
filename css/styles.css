@@ -59,6 +59,20 @@ body{
     color: var(--accent-color);
 }
 
+.site-nav .studio {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .studio:hover,
+.site-nav .studio:focus {
+    color: var(--accent-color);
+}
+
 .auth-nav .link{
     color: var(--secondary-color);
     font-weight: 500;
@@ -72,7 +86,7 @@ body{
     color: var(--accent-color);
 }
 
-/* Main Hero */
+/* Main Hero Студия*/
 
 .hero{
     background-color: var(--canvas);
@@ -100,7 +114,7 @@ body{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    
+    font-family: inherit;
 
     cursor: pointer;
 }
@@ -132,11 +146,73 @@ body{
     font-size: 16px;
     line-height: 1.18;
 }
-.workers > h3 {
+.workers .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
+
+
+
+
+
+
+
+
+
+/* Портфолио */
+
+.site-nav .current {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .current:hover,
+.site-nav .current:focus {
+    color: var(--accent-color);
+}
+
+/* Hero Main */
+
+.filters .button {
+    font-family: inherit;
+    background-color: #E5E5E5;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+
+}
+
+.filters .button:hover,
+.button:focus {
+    font-family: inherit;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.items>p {
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.items>h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+
+
+
 
 /* footer */
 .footer {
@@ -154,6 +230,12 @@ body{
     text-decoration: none;
 }
 
+
+.address .map:hover,
+.address .map:focus {
+    color: var(--accent-color);
+}
+
 .address .contact {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
@@ -163,4 +245,8 @@ body{
     text-decoration: none;
 }
 
+.address .contact:hover,
+.address .contact:focus {
+    color: var(--accent-color);
+}
 
