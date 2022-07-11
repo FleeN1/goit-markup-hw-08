@@ -79,15 +79,26 @@ body {
     font-family: inherit;
     background-color: #E5E5E5;
     color: var(--primary-color);
+    cursor: pointer;
+    
 }
 
 .filters .button:hover, .button:focus {
     font-family: inherit;
     background-color: var(--accent-color);
     color: var(--white-color);
+    cursor: pointer;
 }
-.items> p {
+.items > p {
     color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.9;
+} 
+.items > h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 /* * footer  */
