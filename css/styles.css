@@ -26,9 +26,15 @@ body{
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Logo */
+
+.page-header{
+    background-color: #FFFFFF;
+}
 
 .logo {
     color: #000000;
@@ -54,14 +60,8 @@ body{
     text-decoration: none;
 }
 
-.current {
+.link.current {
     color: var(--accent-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
 }
 
 .site-nav .link:hover, .site-nav .link:focus {
@@ -96,12 +96,30 @@ body{
     text-transform: uppercase;
 }
 
+
+
 .button {
-    color: var(--primary-color);
-    background-color: #ffffff;
+    font-family: inherit;
+    cursor: pointer;
 }
 
-.button-main {
+
+.button.secondary {
+    color: var(--primary-color);
+    background-color: #E5E5E5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.button.main {
 
     color: var(--white-color);
     background-color: var(--accent-color);
@@ -109,9 +127,6 @@ body{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    font-family: inherit;
-
-    cursor: pointer;
 }
 
 /* Features */
@@ -129,7 +144,10 @@ body{
 }
 
 /* Sections */
-.section > h2 {
+.section {
+    background-color: #F5F4FA;
+}
+.section .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -158,32 +176,13 @@ body{
 /* Портфолио */
 /* Hero Main */
 
-.filters .button {
-    font-family: inherit;
-    background-color: #E5E5E5;
-    color: var(--primary-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    cursor: pointer;
-
-}
-
-.filters .button:hover,
-.button:focus {
-    font-family: inherit;
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    cursor: pointer;
-}
-
-.items>p {
+.items> p {
     color: var(--secondary-color);
     font-size: 16px;
     line-height: 1.9;
 }
 
-.items .article {
+.items .title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
