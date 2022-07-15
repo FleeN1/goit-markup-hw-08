@@ -17,18 +17,18 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container nav">
         <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="items"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="items"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="items"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-          <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+          <li class="item"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+          <li class="item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -37,19 +37,19 @@
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button main">Заказать услугу</button>
       </section>
-      <section class="content">
+      <section class="section features">
         <div class="container">
-          <h2 class="visibility">Особенности</h2>
+          <!-- <h2 class="list">Особенности</h2> -->
           <ul class="features list">
-            <li class="list">
+            <li class="catalog">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также <br />
-                начало повседневной работы <br />
-                по формированию позиции.
+                начало повседневной работы по<br />
+                формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="catalog">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности <br />
@@ -57,7 +57,7 @@
                 влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="catalog">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с <br />
@@ -65,7 +65,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="catalog">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько <br />
@@ -78,34 +78,40 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="title">Чем мы занимаемся</h2>
+          <h2 class="caption">Чем мы занимаемся</h2>
           <ul class="thing list">
-            <li><img src="./images/img.jpg" alt="Ноутбук" width="370" /></li>
-            <li><img src="./images/phone.jpg" alt="Телефон" width="370" /></li>
-            <li><img src="./images/tablet.jpg" alt="Планшет" width="370" /></li>
+            <li class="list">
+              <img src="./images/img.jpg" alt="Ноутбук" width="370" class="picture" />
+            </li>
+            <li class="list">
+              <img src="./images/phone.jpg" alt="Телефон" width="370" class="picture" />
+            </li>
+            <li class="list">
+              <img src="./images/tablet.jpg" alt="Планшет" width="370" class="picture" />
+            </li>
           </ul>
         </div>
       </section>
-      <section class="team">
-        <div class="container team">
+      <section class="section team">
+        <div class="container">
           <h2 class="caption">Наша команда</h2>
           <ul class="workers list">
-            <li>
+            <li class="list">
               <img src="./images/yegor.jpg" alt="Игорь" width="270" class="picture" />
               <h3 class="title">Игорь Демьяненко</h3>
               <p class="text">Product Designer</p>
             </li>
-            <li>
+            <li class="list">
               <img src="./images/olha.jpg" alt="Ольга" width="270" class="picture" />
               <h3 class="title">Ольга Репина</h3>
               <p class="text">Frontend Developer</p>
             </li>
-            <li>
+            <li class="list">
               <img src="./images/nikolay.jpg" alt="Николай" width="270" class="picture" />
               <h3 class="title">Николай Тарасов</h3>
               <p class="text">Marketing</p>
             </li>
-            <li>
+            <li class="list">
               <img src="./images/michael.jpg" alt="Михаил" width="270" class="picture" />
               <h3 class="title">Михаил Ермаков</h3>
               <p class="text">UI Designer</p>
@@ -115,24 +121,30 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
-      >
-      <address>
-        <ul class="address list">
-          <li>
-            <a
-              href="https://goo.gl/maps/tX8wqyjkpakp2gHT6"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="map"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="tel:+380991111111" class="contact">+38 099 111 11 11</a></li>
-          <li><a href="mailto:info@example.com" class="contact">info@example.com</a></li>
-        </ul>
-      </address>
+      <div class="container footer">
+        <a class="emblem" href="./index.html"
+          ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
+        >
+        <address>
+          <ul class="address list">
+            <li>
+              <a
+                href="https://goo.gl/maps/tX8wqyjkpakp2gHT6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="contact">info@example.com</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
