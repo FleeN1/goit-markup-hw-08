@@ -243,6 +243,10 @@ body {
     display: flex;
 }
 
+.thing .list:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* Team */
 
 .section.team {
@@ -267,6 +271,10 @@ body {
 
 .workers .list {
     border-radius: 0px 0px 4px 4px;
+}
+
+.workers .list:not(:last-child) {
+    margin-right: 30px;
 }
 
 .workers .picture {
