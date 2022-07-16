@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <header class="page-header">
@@ -33,9 +33,9 @@
   </header>
   <body>
     <main>
-      <section class="selection">
-        <div class="container">
-          <!-- <h1 class="title list">Наши работы</h1> -->
+      <!-- <section class="selection">
+        <div class="container"> -->
+      <!-- <h1 class="title list">Наши работы</h1>
           <ul class="filters list">
             <li><button type="button" class="button secondary">Все</button></li>
             <li><button type="button" class="button secondary">Веб-сайты</button></li>
@@ -43,56 +43,83 @@
             <li><button type="button" class="button secondary">Дизайн</button></li>
             <li><button type="button" class="button secondary">Маркетинг</button></li>
           </ul>
-        </div>
-      </section>
-      <section>
+        </div> -->
+      <!-- </section>  -->
+      <section class="selection">
         <div class="container">
           <!-- <h2 class="article">Продукты</h2> -->
+
+          <ul class="filters list">
+            <li class="key"><button type="button" class="button secondary">Все</button></li>
+            <li class="key"><button type="button" class="button secondary">Веб-сайты</button></li>
+            <li class="key"><button type="button" class="button secondary">Приложения</button></li>
+            <li class="key"><button type="button" class="button secondary">Дизайн</button></li>
+            <li class="key"><button type="button" class="button secondary">Маркетинг</button></li>
+          </ul>
+
           <ul class="product list">
             <li class="items">
               <img src="./images/tablet.jpg" alt="Ноутбук" width="370" class="capture" />
-              <h3 class="title">Технокряк</h3>
-              <p class="description">Веб-сайт</p>
+              <div class="unit">
+                <h3 class="title">Технокряк</h3>
+                <p class="description">Веб-сайт</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/basket.jpg" alt="Баскетбол" width="370" class="capture" />
-              <h3 class="title">Постер New Orlean vs Golden Star</h3>
-              <p class="description">Дизайн</p>
+              <div class="unit">
+                <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                <p class="description">Дизайн</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/fish.jpg" alt="Рыба" width="370" class="capture" />
-              <h3 class="title">Ресторан Seafood</h3>
-              <p class="description">Приложение</p>
+              <div class="unit">
+                <h3 class="title">Ресторан Seafood</h3>
+                <p class="description">Приложение</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/headphone.jpg" alt="Наушники" width="370" class="capture" />
-              <h3 class="title">Проект Prime</h3>
-              <p class="description">Маркетинг</p>
+              <div class="unit">
+                <h3 class="title">Проект Prime</h3>
+                <p class="description">Маркетинг</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/box.jpg" alt="Коробки" width="370" class="capture" />
-              <h3 class="title">Проект Boxes</h3>
-              <p class="description">Приложение</p>
+              <div class="unit">
+                <h3 class="title">Проект Boxes</h3>
+                <p class="description">Приложение</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/mac.jpg" alt="Компьютер" width="370" class="capture" />
-              <h3 class="title">Inspiration has no Borders</h3>
-              <p class="description">Веб-сайт</p>
+              <div class="unit">
+                <h3 class="title">Inspiration has no Borders</h3>
+                <p class="description">Веб-сайт</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/book.jpg" alt="Книги" width="370" class="capture" />
-              <h3 class="title">Издание Limited Edition</h3>
-              <p class="description">Дизайн</p>
+              <div class="unit">
+                <h3 class="title">Издание Limited Edition</h3>
+                <p class="description">Дизайн</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/article.jpg" alt="Рекламная бирка" width="370" class="capture" />
-              <h3 class="title">Проект LAB</h3>
-              <p class="description">Маркетинг</p>
+              <div class="unit">
+                <h3 class="title">Проект LAB</h3>
+                <p class="description">Маркетинг</p>
+              </div>
             </li>
             <li class="items">
               <img src="./images/working.jpg" alt="Работа" width="370" class="capture" />
-              <h3 class="title">Growing Business</h3>
-              <p class="description">Приложение</p>
+              <div class="unit">
+                <h3 class="title">Growing Business</h3>
+                <p class="description">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -105,7 +132,7 @@
         >
         <address>
           <ul class="address list">
-            <li>
+            <li class="block">
               <a
                 href="https://goo.gl/maps/tX8wqyjkpakp2gHT6"
                 target="_blank"
@@ -114,10 +141,10 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="block">
               <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
             </li>
-            <li>
+            <li class="block">
               <a href="mailto:info@example.com" class="contact">info@example.com</a>
             </li>
           </ul>
