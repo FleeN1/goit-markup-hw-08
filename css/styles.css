@@ -142,7 +142,15 @@ body {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-height: 600px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../images/bcg-image.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
 .hero-title {
     display: block;
     width: 696px;
@@ -221,6 +229,17 @@ body {
     width: 270px;
 }
 
+.catalog .thumb {
+    background-color: #E5E5E5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.thumb .icon {
+    width: 70px;
+    height: 70px;
+}
+
 .thing .picture {
     display: block;
 }
@@ -279,6 +298,7 @@ body {
 }
 
 .workers .list {
+    max-height: 428px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -290,7 +310,6 @@ body {
 
 .workers .block {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .block .text {
@@ -317,6 +336,30 @@ body {
     text-align: center;
 }
 
+
+.list .link-social {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    list-style: none;
+}
+.link-social .social{
+    width: 44px;
+    height: 44px;
+    background-color: red;
+    border: none;
+    padding: 0
+}
+
+.social .icon {
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+}
+
+
+/* Clients */
 
 
 
