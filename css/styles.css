@@ -298,9 +298,9 @@ body {
 }
 
 .workers .list {
-    max-height: 428px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    min-width: 270px;
 }
 
 .workers .list:not(:last-child) {
@@ -310,6 +310,7 @@ body {
 
 .workers .block {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .block .text {
@@ -325,7 +326,7 @@ body {
     text-align: center;
 }
 .block .title {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-top: 0;
 
 
@@ -336,35 +337,90 @@ body {
     text-align: center;
 }
 
-
-.list .link-social {
+.list .social-links {
     display: flex;
-    margin-top: 16px;
-    margin-left: 32px;
-    margin-bottom: 32px;
-    list-style: none;
-}
-.link-social .social{
-    width: 44px;
-    height: 44px;
-    background-color: red;
-    border: none;
-    padding: 0
 }
 
+.social-links .social {
+    display: inline-flex;
+    height: 44px;
+    width: 44px;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+.social-links .social:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-links .social:nth-child(1){
+    margin-left: 32px;
+}
+
+.social-links .social:nth-child(4){
+    margin-right: 32px;
+}
+
+.social-links .social:hover,
+.social-links .social:focus, 
+.social .icon:hover, .social .icon:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
 .social .icon {
-    width: 20px;
     height: 20px;
-    background-color: teal;
+    width: 20px;
+    fill: currentColor;
+}
+
+.social .icon:hover {
+    fill: #FFFFFF;
 }
 
 
 /* Clients */
 
+.section.clients {
+    padding-top: 100px;
+}
 
 
+.container .buyer {
+    display: flex;
+   
+}
 
+.buyer .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;;
+}
 
+.icon .logotyp {
+    fill: currentColor;
+}
+
+.buyer .company:not(:last-child) {
+    margin-right: 30px;
+}
+
+.buyer .icon:hover, .buyer .icon:focus, 
+.icon .logotyp:hover, .icon .logotyp:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.icon .logotyp:hover {
+    fill: var(--accent-color);
+}
 
 
 
@@ -373,11 +429,11 @@ body {
 
 /* Hero Main */
 
-.selection {
-    background-color: #EEEEEE;
+.portfolio {
+    background-color: #ffffff;
 }
 
-.selection .container {
+.selection {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -390,7 +446,7 @@ body {
 .container .filters {
     font-family: inherit;
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -450,6 +506,7 @@ body {
     font-family: 'Roboto' sans-serif;
     background-color: #2F303A;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container.footer {
@@ -520,5 +577,4 @@ body {
 .address .block:not(:last-child){
     padding-bottom: 9px;
 }
-
 
