@@ -119,12 +119,12 @@ body {
 
 .auth-nav .item {
   display: flex;
-  align-items: center;
   color: #757575;
 }
 
 .auth-nav .link {
   display: flex;
+  align-items: center;
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
