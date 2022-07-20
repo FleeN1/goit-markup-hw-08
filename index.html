@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./modal.js" />
+    <link rel="stylesheet" href="/js/modal.js" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -48,11 +48,11 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button main">Заказать услугу</button>
+        <button type="button" class="button main" data-modal-open>Заказать услугу</button>
       </section>
       <section class="section features">
         <div class="container">
-          <!-- <h2 class="list">Особенности</h2> -->
+          <h2 class="visually-hidden">Особенности</h2>
           <ul class="features list">
             <li class="catalog">
               <div class="thumb">
@@ -115,12 +115,21 @@
           <ul class="thing list">
             <li class="list">
               <img src="./images/img.jpg" alt="Ноутбук" width="370" class="picture" />
+              <div class="thing-label">
+                <p class="text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="list">
               <img src="./images/phone.jpg" alt="Телефон" width="370" class="picture" />
+              <div class="thing-label">
+                <p class="text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="list">
               <img src="./images/tablet.jpg" alt="Планшет" width="370" class="picture" />
+              <div class="thing-label">
+                <p class="text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -443,13 +452,13 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

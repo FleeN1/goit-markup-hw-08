@@ -34,6 +34,24 @@ body {
   padding-right: 15px;
 }
 
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Sections */
 .section {
   padding-top: 94px;
@@ -95,6 +113,9 @@ body {
 
   position: relative;
   display: inline-block;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.current {
@@ -139,14 +160,19 @@ body {
 .auth-nav .link {
   display: flex;
   align-items: center;
+
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   margin: 0;
   padding: 0;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item .mobile {
@@ -305,6 +331,33 @@ body {
   margin-right: 30px;
 }
 
+.thing .list {
+  position: relative;
+}
+
+.list .thing-label {
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+
+  width: 100%;
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thing-label .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
 /* Team */
 
 .section.team {
@@ -372,13 +425,18 @@ body {
 
 .social-links .social {
   display: inline-flex;
+
   height: 44px;
   width: 44px;
+
   margin-top: 16px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   color: #afb1b8;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links .social:not(:last-child) {
@@ -404,6 +462,9 @@ body {
   height: 20px;
   width: 20px;
   fill: currentColor;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social .icon:hover {
@@ -422,17 +483,26 @@ body {
 
 .buyer .icon {
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
   width: 170px;
   height: 92px;
   color: #afb1b8;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon .logotyp {
   fill: currentColor;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buyer .company:not(:last-child) {
@@ -454,10 +524,6 @@ body {
 /* Портфолио */
 
 /* Hero Main */
-
-.portfolio {
-  background-color: #ffffff;
-}
 
 .selection {
   padding-top: 94px;
@@ -491,6 +557,46 @@ body {
   border: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.items .overlay-list {
+  position: relative;
+  overflow: hidden;
+}
+
+.items .over-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.items:hover .over-thumb {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.items .over-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  padding: 63px 24px 63px 24px;
+  margin: 0;
 }
 
 .product .items:nth-child(3n) {
@@ -568,8 +674,13 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
   text-decoration: none;
+
   cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .map:hover,
@@ -585,6 +696,9 @@ body {
   line-height: 1.71;
   text-decoration: none;
   cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .contact:hover,
@@ -635,6 +749,9 @@ body {
   background: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media .social-footer:not(:last-child) {
@@ -663,13 +780,25 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.9) translate(-50%, -50%);
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   min-width: 528px;
   min-height: 581px;
@@ -679,6 +808,9 @@ body {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .modal-close {
@@ -686,15 +818,20 @@ body {
   top: 0;
   right: 0;
 
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  background: red;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
   width: 30px;
   height: 30px;
   padding: 0;
-  margin: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+
+  cursor: pointer;
 }
 
 .modal-icon {

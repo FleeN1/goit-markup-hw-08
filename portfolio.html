@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="/js/modal.js" />
     <title>WebStudio</title>
   </head>
   <body class="portfolio">
@@ -47,7 +48,7 @@
     <main>
       <section class="selection">
         <div class="container">
-          <!-- <h2 class="article">Продукты</h2> -->
+          <h2 class="visually-hidden">Продукты</h2>
 
           <ul class="filters list">
             <li class="key"><button type="button" class="button secondary">Все</button></li>
@@ -59,63 +60,144 @@
 
           <ul class="product list">
             <li class="items">
-              <img src="./images/laptop.jpg" alt="Ноутбук" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/laptop.jpg" alt="Ноутбук" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Технокряк</h3>
                 <p class="description">Веб-сайт</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/basket.jpg" alt="Баскетбол" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/basket.jpg" alt="Баскетбол" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Постер New Orlean vs Golden Star</h3>
                 <p class="description">Дизайн</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/fish.jpg" alt="Рыба" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/fish.jpg" alt="Рыба" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Ресторан Seafood</h3>
                 <p class="description">Приложение</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/headphone.jpg" alt="Наушники" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/headphone.jpg" alt="Наушники" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Проект Prime</h3>
                 <p class="description">Маркетинг</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/box.jpg" alt="Коробки" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/box.jpg" alt="Коробки" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Проект Boxes</h3>
                 <p class="description">Приложение</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/mac.jpg" alt="Компьютер" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/mac.jpg" alt="Компьютер" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Inspiration has no Borders</h3>
                 <p class="description">Веб-сайт</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/book.jpg" alt="Книги" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/book.jpg" alt="Книги" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Издание Limited Edition</h3>
                 <p class="description">Дизайн</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/article.jpg" alt="Рекламная бирка" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/article.jpg" alt="Рекламная бирка" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Проект LAB</h3>
                 <p class="description">Маркетинг</p>
               </div>
             </li>
             <li class="items">
-              <img src="./images/working.jpg" alt="Работа" width="370" class="capture" />
+              <div class="overlay-list">
+                <img src="./images/working.jpg" alt="Работа" width="370" class="capture" />
+                <div class="over-thumb">
+                  <p class="over-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="unit">
                 <h3 class="title">Growing Business</h3>
                 <p class="description">Приложение</p>
