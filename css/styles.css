@@ -799,6 +799,71 @@ img {
   transform: scale(0.9) translate(-50%, -50%);
 }
 
+.footer .mailing {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: 93px;
+}
+
+.mailing .capture.mail {
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.mailing .form-email {
+  display: flex;
+}
+
+.form-email .mail-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  appearance: none;
+
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+
+  color: var(--white-color);
+}
+
+.form-email .button-send {
+  background-color: var(--accent-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  margin-left: 12px;
+
+  width: 200px;
+  height: 50px;
+
+  color: var(--white-color);
+  font-family: inherit;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.form-email .icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+/* MODAL */
+
 .modal {
   position: fixed;
   top: 50%;
