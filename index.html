@@ -471,7 +471,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icon">
             <use href="./images/icons.svg#icon-close"></use>
@@ -501,13 +501,19 @@
           </div>
           <div class="modal-resume">
             <label for="comments" class="form-label">Коментар</label>
-            <input
-              type="textarea"
-              class="form-input"
+            <textarea
               name="comments"
               id="comments"
+              rows="10"
+              class="form-input textarea"
               placeholder="Введіть текст"
-            />
+            ></textarea>
+          </div>
+          <div class="checkbox-main">
+            <label for="checkbox" class="checkbox-label"
+              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            >
+            <input type="checkbox" class="checkbox-input" name="checkbox" id="checkbox" />
           </div>
         </form>
       </div>
