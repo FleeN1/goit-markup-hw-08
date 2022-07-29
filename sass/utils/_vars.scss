@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --accent-color: #2196f3;
+    --white-color: #ffffff;
+    --canvas: #2f303a;
+    --grey-color: #AFB1B8;
+    --black-color: rgba(0, 0, 0, 1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}

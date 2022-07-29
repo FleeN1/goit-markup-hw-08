@@ -1,0 +1,44 @@
+.section.clients {
+    padding-top: 100px;
+}
+
+.clients--buyer {
+    display: flex;
+}
+
+.buyer__icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buyer__logotyp {
+    fill: var(--grey-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buyer__company:not(:last-child) {
+    margin-right: 30px;
+}
+
+.buyer__icon:hover,
+.buyer__icon:focus {
+    border-color: var(--accent-color);
+}
+
+.buyer__icon:hover .buyer__logotyp {
+    fill: var(--accent-color);
+}

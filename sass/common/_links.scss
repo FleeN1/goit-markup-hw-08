@@ -1,0 +1,117 @@
+.social {
+    display: flex;
+}
+
+.social__links {
+    display: flex;
+
+    height: 44px;
+    width: 44px;
+
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #afb1b8;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.social__links:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__links:nth-child(1) {
+    margin-left: 32px;
+}
+
+.social__links:nth-child(4) {
+    margin-right: 32px;
+}
+
+.social__links:hover,
+.social__links:focus {
+    background-color: var(--accent-color);
+}
+
+.social__icon {
+    height: 20px;
+    width: 20px;
+    fill: var(--grey-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.social__links:hover .social__icon {
+    fill: #ffffff;
+}
+
+
+
+
+.footer .media {
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: 72px;
+}
+
+.media .social-media {
+    display: flex;
+    padding: 0;
+}
+
+.media .capture.media {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.social-media .social-footer {
+    width: 44px;
+    height: 44px;
+}
+
+.social-media .link-footer {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media .social-footer:not(:last-child) {
+    margin-right: 10px;
+}
+
+.media .icons {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+
+.media .social:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-media .link-footer:hover,
+.social-media .link-footer:focus {
+    background-color: var(--accent-color);
+}

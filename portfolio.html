@@ -1,295 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="/js/modal.js" />
-    <title>WebStudio</title>
-  </head>
-  <body class="portfolio">
-    <header class="page-header">
-      <div class="container page-header__nav">
-        <a class="logo" href="./index.html"><span class="logo logo--light">Web</span>Studio</a>
-        <nav>
-          <ul class="page-header__list list">
-            <li class="page-header__items">
-              <a href="./index.html" class="page-header__link">Студія</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="/js/modal.js" />
+  <title>WebStudio</title>
+</head>
+
+<body class="portfolio">
+  <header class="page-header">
+    <div class="container page-header__nav">
+      <a class="logo" href="./index.html"><span class="logo logo--light">Web</span>Studio</a>
+      <nav>
+        <ul class="page-header__list list">
+          <li class="page-header__items">
+            <a href="./index.html" class="page-header__link">Студія</a>
+          </li>
+          <li class="page-header__items">
+            <a href="./portfolio.html" class="page-header__link current">Портфоліо</a>
+          </li>
+          <li class="page-header__items"><a href="" class="page-header__link">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="page-header__auth list">
+        <li class="page-header__info">
+          <a href="mailto:info@example.com" class="page-header__icon">
+            <svg class="page-header__mobile" width="16px" height="12px">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>info@example.com
+          </a>
+        </li>
+        <li class="page-header__info">
+          <a href="tel:+380991111111" class="page-header__icon"><svg class="page-header__mobile" width="10px"
+              height="16px">
+              <use href="./images/icons.svg#icon-mobile"></use>
+            </svg>+38 099 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="selection">
+      <div class="container">
+        <h2 class="visually-hidden">Продукты</h2>
+
+        <ul class="filters list">
+          <li class="key"><button type="button" class="button secondary">Все</button></li>
+          <li class="key"><button type="button" class="button secondary">Веб-сайты</button></li>
+          <li class="key"><button type="button" class="button secondary">Приложения</button></li>
+          <li class="key"><button type="button" class="button secondary">Дизайн</button></li>
+          <li class="key"><button type="button" class="button secondary">Маркетинг</button></li>
+        </ul>
+
+        <ul class="product list">
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/laptop.jpg" alt="Ноутбук" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Технокряк</h3>
+              <p class="description">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/basket.jpg" alt="Баскетбол" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Постер New Orlean vs Golden Star</h3>
+              <p class="description">Дизайн</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/fish.jpg" alt="Рыба" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Ресторан Seafood</h3>
+              <p class="description">Приложение</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/headphone.jpg" alt="Наушники" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Проект Prime</h3>
+              <p class="description">Маркетинг</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/box.jpg" alt="Коробки" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Проект Boxes</h3>
+              <p class="description">Приложение</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/mac.jpg" alt="Компьютер" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Inspiration has no Borders</h3>
+              <p class="description">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/book.jpg" alt="Книги" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Издание Limited Edition</h3>
+              <p class="description">Дизайн</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/article.jpg" alt="Рекламная бирка" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Проект LAB</h3>
+              <p class="description">Маркетинг</p>
+            </div>
+          </li>
+          <li class="items">
+            <div class="overlay-list">
+              <img src="./images/working.jpg" alt="Работа" width="370" class="capture" />
+              <div class="over-thumb">
+                <p class="over-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
+                </p>
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="title">Growing Business</h3>
+              <p class="description">Приложение</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer">
+      <div class="info">
+        <div class="logo-main">
+          <a class="logo" href="./index.html"><span class="logo logo--light">Web</span><span
+              class="logo-studio">Studio</span></a>
+        </div>
+        <address>
+          <ul class="address list">
+            <li class="block">
+              <a href="https://goo.gl/maps/tX8wqyjkpakp2gHT6" target="_blank" rel="noopener noreferrer" class="map">м.
+                Київ, пр-т Лесі Українки, 26</a>
             </li>
-            <li class="page-header__items">
-              <a href="./portfolio.html" class="page-header__link current">Портфоліо</a>
+            <li class="block">
+              <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
             </li>
-            <li class="page-header__items"><a href="" class="page-header__link">Контакти</a></li>
+            <li class="block">
+              <a href="mailto:info@example.com" class="contact">info@example.com</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="page-header__auth list">
-          <li class="page-header__info">
-            <a href="mailto:info@example.com" class="page-header__icon">
-              <svg class="page-header__mobile" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@example.com
+        </address>
+      </div>
+      <div class="media">
+        <h3 class="capture media">приєднуйтесь</h3>
+        <ul class="social-media list">
+          <li class="social-footer">
+            <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
+              <svg class="icons">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
-          <li class="page-header__info">
-            <a href="tel:+380991111111" class="page-header__icon"
-              ><svg class="page-header__mobile" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-mobile"></use></svg
-              >+38 099 111 11 11
+          <li class="social-footer">
+            <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
+              <svg class="icons">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-footer">
+            <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
+              <svg class="icons">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-footer">
+            <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
+              <svg class="icons">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
-    </header>
-    <main>
-      <section class="selection">
-        <div class="container">
-          <h2 class="visually-hidden">Продукты</h2>
-
-          <ul class="filters list">
-            <li class="key"><button type="button" class="button secondary">Все</button></li>
-            <li class="key"><button type="button" class="button secondary">Веб-сайты</button></li>
-            <li class="key"><button type="button" class="button secondary">Приложения</button></li>
-            <li class="key"><button type="button" class="button secondary">Дизайн</button></li>
-            <li class="key"><button type="button" class="button secondary">Маркетинг</button></li>
-          </ul>
-
-          <ul class="product list">
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/laptop.jpg" alt="Ноутбук" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Технокряк</h3>
-                <p class="description">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/basket.jpg" alt="Баскетбол" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                <p class="description">Дизайн</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/fish.jpg" alt="Рыба" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Ресторан Seafood</h3>
-                <p class="description">Приложение</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/headphone.jpg" alt="Наушники" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Проект Prime</h3>
-                <p class="description">Маркетинг</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/box.jpg" alt="Коробки" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Проект Boxes</h3>
-                <p class="description">Приложение</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/mac.jpg" alt="Компьютер" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Inspiration has no Borders</h3>
-                <p class="description">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/book.jpg" alt="Книги" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Издание Limited Edition</h3>
-                <p class="description">Дизайн</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/article.jpg" alt="Рекламная бирка" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Проект LAB</h3>
-                <p class="description">Маркетинг</p>
-              </div>
-            </li>
-            <li class="items">
-              <div class="overlay-list">
-                <img src="./images/working.jpg" alt="Работа" width="370" class="capture" />
-                <div class="over-thumb">
-                  <p class="over-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="unit">
-                <h3 class="title">Growing Business</h3>
-                <p class="description">Приложение</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container footer">
-        <div class="info">
-          <div class="logo-main">
-            <a class="logo" href="./index.html"
-              ><span class="logo logo--light">Web</span><span class="logo-studio">Studio</span></a
-            >
-          </div>
-          <address>
-            <ul class="address list">
-              <li class="block">
-                <a
-                  href="https://goo.gl/maps/tX8wqyjkpakp2gHT6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="map"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="block">
-                <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
-              </li>
-              <li class="block">
-                <a href="mailto:info@example.com" class="contact">info@example.com</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="media">
-          <h3 class="capture media">приєднуйтесь</h3>
-          <ul class="social-media list">
-            <li class="social-footer">
-              <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
-                <svg class="icons">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer">
-              <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
-                <svg class="icons">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer">
-              <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
-                <svg class="icons">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer">
-              <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
-                <svg class="icons">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="mailing">
-          <h3 class="capture mail">Підпишіться на розсилку</h3>
-          <form class="email-form">
-            <div class="form-email">
-              <div class="mail-area">
-                <label for="mail" class="mail-label"></label>
-                <input type="email" name="mail" id="mail" class="mail-input" placeholder="E-mail" />
-              </div>
-              <button type="submit" class="button-send">
-                Підписатися
-                <svg class="icon-send">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
+      <div class="mailing">
+        <h3 class="capture mail">Підпишіться на розсилку</h3>
+        <form class="email-form">
+          <div class="form-email">
+            <div class="mail-area">
+              <label for="mail" class="mail-label"></label>
+              <input type="email" name="mail" id="mail" class="mail-input" placeholder="E-mail" />
             </div>
-          </form>
-        </div>
+            <button type="submit" class="button-send">
+              Підписатися
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
