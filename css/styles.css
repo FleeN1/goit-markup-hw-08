@@ -11,6 +11,8 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --canvas: #2f303a;
+  --grey-color: #AFB1B8;
+  --black-color: rgba(0, 0, 0, 1);
 }
 
 body {
@@ -77,15 +79,20 @@ img {
 /* Logo */
 
 .logo {
-  color: #000000;
+  color: var(--accent-color);
   font-family: 'Raleway', serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
 }
-.logo--light {
-  color: var(--accent-color);
+
+.footer__logo--light {
+  color: var(--white-color);
+}
+
+.header__logo--dark {
+  color: var(--black-color);
 }
 
 /* Sections */
@@ -149,7 +156,7 @@ img {
   align-items: center;
 }
 
-.page-header__info + .page-header__info {
+.page-header__info+.page-header__info {
   margin-left: 50px;
 }
 
@@ -180,18 +187,20 @@ img {
   display: flex;
   align-items: center;
   margin-right: 10px;
-  fill: currentColor;
+  fill: var(--grey-color);
   cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header__icon:hover,
 .page-header__icon:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
-.page-header__mobile:hover,
-.page-header__mobile:focus {
+.page-header__icon:hover .page-header__mobile,
+.page-header__icon:focus .page-header__mobile {
   fill: var(--accent-color);
 }
 
@@ -311,6 +320,7 @@ img {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
+
 .features__text {
   color: var(--secondary-color);
   font-weight: 400;
@@ -364,7 +374,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.team__caption {
+.caption {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -380,7 +390,7 @@ img {
   align-items: center;
 }
 
-.workers__list {
+.workers__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -388,7 +398,7 @@ img {
   background: var(--white-color);
 }
 
-.workers__list:not(:last-child) {
+.workers__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -408,6 +418,7 @@ img {
 
   text-align: center;
 }
+
 .workers__title {
   margin-bottom: 10px;
   margin-top: 0;
@@ -424,7 +435,7 @@ img {
 }
 
 .social__links {
-  display: inline-flex;
+  display: flex;
 
   height: 44px;
   width: 44px;
@@ -437,6 +448,7 @@ img {
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social__links:not(:last-child) {
@@ -452,22 +464,21 @@ img {
 }
 
 .social__links:hover,
-.social__links:focus,
-.social__icon:hover,
-.social__icon:focus {
+.social__links:focus {
   background-color: var(--accent-color);
-  color: var(--white-color);
 }
+
 .social__icon {
   height: 20px;
   width: 20px;
-  fill: currentColor;
+  fill: var(--grey-color);
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.social__icon:hover {
+.social__links:hover .social__icon {
   fill: #ffffff;
 }
 
@@ -477,11 +488,11 @@ img {
   padding-top: 100px;
 }
 
-.container .buyer {
+.clients--buyer {
   display: flex;
 }
 
-.buyer .icon {
+.buyer__icon {
   display: flex;
 
   align-items: center;
@@ -498,26 +509,23 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon .logotyp {
-  fill: currentColor;
+.buyer__logotyp {
+  fill: var(--grey-color);
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buyer .company:not(:last-child) {
+.buyer__company:not(:last-child) {
   margin-right: 30px;
 }
 
-.buyer .icon:hover,
-.buyer .icon:focus,
-.icon .logotyp:hover,
-.icon .logotyp:focus {
+.buyer__icon:hover,
+.buyer__icon:focus {
   border-color: var(--accent-color);
-  color: var(--accent-color);
 }
 
-.icon .logotyp:hover {
+.buyer__icon:hover .buyer__logotyp {
   fill: var(--accent-color);
 }
 
@@ -656,10 +664,6 @@ img {
   margin-bottom: 20px;
 }
 
-.footer .logo-studio {
-  color: var(--white-color);
-}
-
 .address .map {
   color: var(--white-color);
   font-style: normal;
@@ -732,7 +736,7 @@ img {
 }
 
 .social-media .link-footer {
-  display: inline-flex;
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -989,7 +993,7 @@ img {
   transform: translateY(-50%);
 }
 
-.form-input:focus + .icon-resume {
+.form-input:focus+.icon-resume {
   fill: var(--accent-color);
 }
 
@@ -1058,13 +1062,13 @@ img {
   fill: transparent;
 }
 
-.checkbox:checked + .check-border {
+.checkbox:checked+.check-border {
   background-color: var(--accent-color);
   border: transparent;
   outline: none;
 }
 
-.checkbox:checked + .check-border svg {
+.checkbox:checked+.check-border svg {
   fill: #ffffff;
 }
 
