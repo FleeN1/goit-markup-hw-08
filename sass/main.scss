@@ -1,19 +1,24 @@
 @import './utils/vars';
+@import './utils/base';
 
 @import './components/current';
 @import './components/vshidden';
 @import './components/container';
+@import './components/section';
+@import './components/caption';
+
+
 @import './common/logo';
 @import './common/links';
-@import './components/section';
-@import './common/button';
-@import './components/caption';
 @import './common/header';
+@import './common/button';
+@import './common/footer';
+@import './common/modal';
+
+
 @import './layers/hero';
 @import './layers/features';
 @import './layers/works';
 @import './layers/team';
 @import './layers/clients';
 @import './layers/p-hero';
-@import './common/footer';
-@import './common/modal';
