@@ -17,24 +17,24 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:not(:last-child) {
+            margin-right: 10px;
+        }
+    
+     &:nth-child(1) {
+            margin-left: 32px;
+        }
+    
+    &:nth-child(4) {
+            margin-right: 32px;
+        }
+    
+    &:hover, :focus {
+            background-color: var(--accent-color);
+        }
+
 }
 
-.social__links:not(:last-child) {
-    margin-right: 10px;
-}
-
-.social__links:nth-child(1) {
-    margin-left: 32px;
-}
-
-.social__links:nth-child(4) {
-    margin-right: 32px;
-}
-
-.social__links:hover,
-.social__links:focus {
-    background-color: var(--accent-color);
-}
 
 .social__icon {
     height: 20px;
@@ -44,11 +44,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    .social__links:hover & {
+            fill: #ffffff;
+        }
+
 }
 
-.social__links:hover .social__icon {
-    fill: #ffffff;
-}
+
 
 
 
@@ -58,28 +60,35 @@
     justify-content: center;
     margin-left: 70px;
     margin-top: 72px;
+
+
+    & .social-media {
+            display: flex;
+            padding: 0;
+        }
+    
+     & .capture.media {
+            margin-top: 0;
+            margin-bottom: 20px;
+            margin-left: 0;
+            text-transform: uppercase;
+            color: var(--white-color);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+        }
 }
 
-.media .social-media {
-    display: flex;
-    padding: 0;
-}
 
-.media .capture.media {
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 0;
-    text-transform: uppercase;
-    color: var(--white-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-}
 
 .social-media .social-footer {
     width: 44px;
     height: 44px;
+
+    &:not(:last-child) {
+            margin-right: 10px;
+        }
 }
 
 .social-media .link-footer {
@@ -95,11 +104,13 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, :focus {
+            background-color: var(--accent-color);
+        }
 }
 
-.social-media .social-footer:not(:last-child) {
-    margin-right: 10px;
-}
+
 
 .media .icons {
     width: 20px;
@@ -111,7 +122,3 @@
     margin-right: 10px;
 }
 
-.social-media .link-footer:hover,
-.social-media .link-footer:focus {
-    background-color: var(--accent-color);
-}

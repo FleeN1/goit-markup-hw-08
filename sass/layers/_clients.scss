@@ -21,6 +21,12 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            border-color: var(--accent-color);
+        }
+    
 }
 
 .buyer__logotyp {
@@ -28,17 +34,13 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .buyer__icon:hover & {
+            fill: var(--accent-color);
+        }
 }
 
 .buyer__company:not(:last-child) {
     margin-right: 30px;
 }
 
-.buyer__icon:hover,
-.buyer__icon:focus {
-    border-color: var(--accent-color);
-}
-
-.buyer__icon:hover .buyer__logotyp {
-    fill: var(--accent-color);
-}

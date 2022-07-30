@@ -2,12 +2,14 @@
     display: flex;
 }
 
-.thing .list:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .thing .list {
     position: relative;
+
+&:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .list .thing-label {
