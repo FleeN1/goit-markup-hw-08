@@ -15,10 +15,7 @@
   line-height: 1.9;
   letter-spacing: 0.06em;
   min-width: 200px;
-
-  @media screen and (max-width: 480px) {
-    margin-bottom: 118px;
-  }
+  margin-bottom: 118px;
 }
 
 .button.secondary {

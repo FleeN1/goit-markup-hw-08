@@ -1,4 +1,4 @@
-.hero {
+.hero__container {
   background-color: var(--canvas);
   text-align: center;
   margin-right: auto;
@@ -7,32 +7,51 @@
     url(../../images/hero-480.jpg);
   background-size: cover;
   background-position: center;
+  flex-grow: 1;
 
-  @media screen and (max-width: 480px) {
+  padding: 0;
+
+  @include mobile {
     width: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-480.jpg);
+  }
+
+  @include tablet {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-768.jpg);
+  }
+
+  @include desktop {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-1600.jpg);
   }
 }
 
 .hero__title {
-  display: block;
-  width: 100%;
-
   color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
 
+  padding-top: 118px;
+  margin-bottom: 30px;
+
+  display: block;
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (max-width: 480px) {
-    font-size: 26px;
-    line-height: 1.6;
-    padding-top: 118px;
-    padding-right: 60px;
-    padding-left: 60px;
+  @include tablet {
+    width: 360px;
+  }
+
+  @include desktop {
+    width: 696px;
+    font-size: 44px;
   }
 }

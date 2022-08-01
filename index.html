@@ -47,11 +47,13 @@
   </header> -->
   <main>
     <section class="hero">
-      <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-      <button type="button" class="button button__main" data-modal-open>Замовити послугу</button>
+      <div class="container hero__container">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="button button__main" data-modal-open>Замовити послугу</button>
+      </div>
     </section>
     <section class="section features">
-      <div class="features__main container">
+      <div class="container features__main">
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="features__list">
           <li class="features__catalog">
@@ -62,8 +64,8 @@
             </div>
             <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="features__text">
-              Ідейні міркування, і навіть початок<br />
-              повсякденної роботи з формування<br />
+              Ідейні міркування, і навіть початок
+              повсякденної роботи з формування
               позиції.
             </p>
           </li>
@@ -75,7 +77,7 @@
             </div>
             <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="features__text">
-              Завдання організації, особливо рамки<br />
+              Завдання організації, особливо рамки
               і місце навчання кадрів тягне у себе.
             </p>
           </li>
@@ -87,7 +89,7 @@
             </div>
             <h3 class="features__title">ПЛАНУВАННЯ</h3>
             <p class="features__text">
-              Так само консультація з широким<br />
+              Так само консультація з широким
               активом значною мірою зумовлює.
             </p>
           </li>
@@ -99,15 +101,15 @@
             </div>
             <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="features__text">
-              Значимість цих проблем настільки<br />
-              очевидна, що реалізація планових<br />
+              Значимість цих проблем настільки
+              очевидна, що реалізація планових
               завдань.
             </p>
           </li>
         </ul>
       </div>
     </section>
-    <!-- <section class="section">
+    <section class="section works">
       <div class="container">
         <h2 class="caption">Чим ми займаємося</h2>
         <ul class="thing">
@@ -131,8 +133,8 @@
           </li>
         </ul>
       </div>
-    </section> -->
-    <!-- <section class="section team">
+    </section>
+    <section class="section team">
       <div class="team__container container">
         <h2 class="team__caption caption">Наша команда</h2>
         <div class="team__cards">
@@ -140,7 +142,7 @@
             <li class="workers__item">
               <img src="./images/yegor.jpg" alt="Игорь" width="270" class="workers__picture" />
               <div class="workers__block">
-                <h3 class="workers__title">Игорь Демьяненко</h3>
+                <h3 class="workers__title">Ігор Дем'яненко</h3>
                 <p class="workers__text">Product Designer</p>
                 <div class="social">
                   <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social__links">
@@ -256,11 +258,11 @@
           </ul>
         </div>
       </div>
-    </section> -->
-    <!-- <section class="section clients">
-      <div class="clients--container container">
-        <h2 class="clients--caption caption">Постійні клієнти</h2>
-        <ul class="clients--buyer">
+    </section>
+    <section class="section clients">
+      <div class="clients__container container">
+        <h2 class="clients__caption caption">Постійні клієнти</h2>
+        <ul class="clients__buyer">
           <li class="buyer__company">
             <a href="" class="buyer__icon">
               <svg class="buyer__logotyp" width="41px" height="47px">
@@ -305,10 +307,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer">
-    <div class="container footer">
+  <footer class="footer section">
+    <div class="container container__footer">
       <div class="info">
         <div class="logo-main">
           <a class="logo" href="./index.html">Web<span class="logo footer__logo--light">Studio</span></a>
@@ -329,7 +331,7 @@
         </address>
       </div>
       <div class="media">
-        <h3 class="capture media">приєднуйтесь</h3>
+        <h3 class="capture media__capture">приєднуйтесь</h3>
         <ul class="social-media">
           <li class="social-footer">
             <a href="" target="_blank" rel="noopener noreferrer" class="link-footer">
@@ -380,7 +382,7 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
       <button type="button" class="modal-close" data-modal-close>
