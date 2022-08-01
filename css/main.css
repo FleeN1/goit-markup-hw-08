@@ -17,6 +17,9 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 ul {
@@ -206,14 +209,14 @@ summary {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 450px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .caption {
@@ -434,7 +437,7 @@ summary {
 }
 
 .button__main {
-  padding: 10px 32px;
+  padding: 10px 24px;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -442,6 +445,11 @@ summary {
   line-height: 1.9;
   letter-spacing: 0.06em;
   min-width: 200px;
+}
+@media screen and (max-width: 480px) {
+  .button__main {
+    margin-bottom: 118px;
+  }
 }
 
 .button.secondary {
@@ -455,7 +463,8 @@ summary {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button.secondary:hover, .button.secondary :focus {
+.button.secondary:hover,
+.button.secondary :focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
@@ -804,20 +813,21 @@ summary {
 .hero {
   background-color: var(--canvas);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-height: 600px;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-image.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-480.jpg);
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100%;
+  }
 }
 
 .hero__title {
   display: block;
-  width: 696px;
+  width: 100%;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -828,24 +838,35 @@ summary {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.6;
+    padding-top: 118px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
 
 .section.features {
   padding-bottom: 0;
 }
 
-.features__list {
-  display: flex;
-  padding-bottom: 0;
+.features__main {
+  margin: 0;
 }
 
-.features__catalog:not(:last-child) {
-  margin-right: 30px;
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 0;
 }
 
 .features__thumb {
   display: flex;
   width: 270px;
-  height: 120px;
   background: #f5f4fa;
   margin-bottom: 30px;
   text-align: center;
@@ -857,6 +878,7 @@ summary {
   display: flex;
   width: 70px;
   height: 70px;
+  margin-bottom: 55px;
 }
 
 .features__title {

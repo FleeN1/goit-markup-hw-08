@@ -1,5 +1,6 @@
 @import './utils/vars';
 @import './utils/base';
+@import './utils/mixin';
 
 @import './components/current';
 @import './components/vshidden';
@@ -7,14 +8,12 @@
 @import './components/section';
 @import './components/caption';
 
-
 @import './common/logo';
 @import './common/links';
 @import './common/header';
 @import './common/button';
 @import './common/footer';
 @import './common/modal';
-
 
 @import './layers/hero';
 @import './layers/features';
