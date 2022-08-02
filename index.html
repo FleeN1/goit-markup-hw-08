@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.min.css" />
-  <link rel="stylesheet" href="/js/modal.js" />
+  <link rel="stylesheet" href="./js/modal.js" />
+  <link rel="stylesheet" href="./js/menu.js">
   <title>WebStudio</title>
 </head>
 
@@ -45,23 +46,23 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="open-burger">
+      <button type="button" class="open-burger" data-menu-open>
         <svg class="open-burger__icon" width="40" height="40">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
       </button>
-      <div class="burger-menu">
+      <div class="burger-menu is-hidden" data-menu>
+        <button type="button" class="close-burger" data-menu-close>
+          <svg class="close-bur__icon" width="40" height="40">
+            <use href="./images/icons.svg#burger-close"></use>
+          </svg>
+        </button>
         <div class="container">
           <div class="burger-top__menu">
-            <button type="button" class="close-burger">
-              <svg class="close-bur__icon" width="40" height="40">
-                <use href="./images/icons.svg#burger-close"></use>
-              </svg>
-            </button>
             <nav>
               <ul class="mob-menu__list">
                 <li class="mob-menu__items">
-                  <a href="./index.html" class="mob-menu__link">Студія</a>
+                  <a href="./index.html" class="mob-menu__link current">Студія</a>
                 </li>
                 <li class="mob-menu__items">
                   <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
@@ -74,11 +75,11 @@
             <div class="mob-connect">
               <ul class="mob-menu__auth">
                 <li class="mob-menu__info">
-                  <a href="mailto:info@example.com" class="mob-menu__icon">info@example.com
+                  <a href="tel:+380991111111" class="mob-menu__icon mob-menu__tel">+38 099 111 11 11
                   </a>
                 </li>
                 <li class="mob-menu__info">
-                  <a href="tel:+380991111111" class="mob-menu__icon">+38 099 111 11 11
+                  <a href="mailto:info@example.com" class="mob-menu__icon">info@example.com
                   </a>
                 </li>
               </ul>
@@ -443,7 +444,7 @@
       </div>
     </div>
   </footer>
-  <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
       <button type="button" class="modal-close" data-modal-close>
@@ -494,7 +495,8 @@
       </form>
     </div>
   </div>
-  <script src="./js/modal.js"></script> -->
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
