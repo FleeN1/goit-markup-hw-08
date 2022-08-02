@@ -1407,6 +1407,11 @@ summary {
     width: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .product .items {
+    width: calc((100% - 60px) / 3);
+  }
+}
 
 .items .overlay-list {
   position: relative;
