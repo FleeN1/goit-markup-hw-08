@@ -8,11 +8,15 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  gap: 15px;
+  gap: 8px;
 
   @include tablet {
+    margin-bottom: 30px;
     justify-content: center;
-    gap: 8px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 

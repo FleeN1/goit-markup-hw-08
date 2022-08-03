@@ -9,7 +9,8 @@
   background-position: center;
   flex-grow: 1;
 
-  padding: 0;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @include mobile {
     width: 100%;
@@ -33,6 +34,8 @@
   }
 
   @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
     width: 100%;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-1600.jpg);
@@ -45,6 +48,8 @@
 }
 
 .hero__title {
+  width: 360px;
+
   color: var(--white-color);
   font-weight: 900;
   font-size: 26px;
@@ -52,17 +57,12 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  padding-top: 118px;
   margin-bottom: 30px;
 
   display: block;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-
-  @include tablet {
-    width: 360px;
-  }
 
   @include desktop {
     width: 696px;

@@ -225,11 +225,18 @@ summary {
 
 .caption {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .caption {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team__caption {
@@ -238,6 +245,8 @@ summary {
 @media screen and (min-width: 1200px) {
   .team__caption {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -634,7 +643,6 @@ summary {
   line-height: 1.9;
   letter-spacing: 0.06em;
   min-width: 200px;
-  margin-bottom: 118px;
 }
 
 .button.secondary {
@@ -697,6 +705,7 @@ summary {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1090,7 +1099,8 @@ summary {
   background-size: cover;
   background-position: center;
   flex-grow: 1;
-  padding: 0;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media screen and (min-width: 480px) {
   .hero__container {
@@ -1116,6 +1126,8 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
     width: 100%;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600.jpg);
   }
@@ -1127,33 +1139,24 @@ summary {
 }
 
 .hero__title {
+  width: 360px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 118px;
   margin-bottom: 30px;
   display: block;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
-  .hero__title {
-    width: 360px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
     font-size: 44px;
   }
-}
-
-.section.features {
-  padding-bottom: 0;
 }
 
 .features__main {
@@ -1185,7 +1188,7 @@ summary {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
+  height: 120px;
   margin-bottom: 30px;
 }
 
@@ -1368,12 +1371,17 @@ summary {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  gap: 15px;
+  gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .container .filters {
+    margin-bottom: 30px;
     justify-content: center;
-    gap: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .filters {
+    margin-bottom: 50px;
   }
 }
 
