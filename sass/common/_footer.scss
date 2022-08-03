@@ -14,7 +14,7 @@
     margin-top: 0;
 
     @include tablet {
-      width: 768px;
+      width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
@@ -22,8 +22,9 @@
     }
 
     @include desktop {
-      width: 1200px;
+      width: 100%;
       align-items: flex-start;
+      flex-wrap: unset;
     }
   }
 }
@@ -33,6 +34,11 @@
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
+
+  @include tablet {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 
   @include desktop {
     gap: 89px;
@@ -96,6 +102,24 @@
 .footer .mailing {
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  @include tablet {
+    align-items: center;
+  }
+
+  @include desktop {
+    align-items: unset;
+    width: auto;
+  }
+}
+
+.mail-area {
+  width: 100%;
+
+  @include desktop {
+    width: 358px;
+  }
 }
 
 .mailing .capture.mail {
@@ -116,10 +140,10 @@
 
 .mailing .email-form {
   display: flex;
-  width: 100%;
 }
 
 .form-email {
+  width: 100%;
   @include desktop {
     display: flex;
   }
@@ -134,9 +158,13 @@
 
   padding-left: 16px;
   height: 50px;
-  width: 450px;
+  width: 100%;
 
   color: var(--white-color);
+
+  @include tablet {
+    width: 358px;
+  }
 
   @include desktop {
     width: 358px;
