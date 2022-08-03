@@ -14,7 +14,6 @@
     margin-top: 0;
 
     @include tablet {
-      width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
@@ -22,7 +21,6 @@
     }
 
     @include desktop {
-      width: 100%;
       align-items: flex-start;
       flex-wrap: unset;
     }
@@ -30,7 +28,6 @@
 }
 
 .container__footer {
-  width: 100%;
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
